@@ -57,8 +57,8 @@ In this example, the `Vote` module imports other modules like `starknet` and `ar
    c. *Return values*: In Cairo, return values are declared using the `->` syntax, while Solidity uses the `returns` keyword.
 
 2. *Modules*:
-   a. *Declaration*: Cairo modules are declared with the `mod` keyword, while Solidity uses the `contract` keyword to define a contract.
-   b. *Imports*: Cairo modules can import other modules using the `use` keyword. In Solidity, the `import` keyword is used to include external contracts or libraries.
+   a. *Declaration*: Cairo contract are modules and are declared with the `mod` keyword, while Solidity uses the `contract` keyword to define a contract.
+   b. *Imports*: Cairo modules can import other modules using the `use` keyword. In this case, all functions in the import module become available in the importing module. In Solidity, the `import` keyword is used to make external contracts or libraries available during compilation. Inheritance is defined with the `is` keyword during contract declaration.
    c. *Namespaces*: Cairo modules serve as namespaces for related functionality. In Solidity, contracts themselves act as namespaces for their functions and variables.
 
 
